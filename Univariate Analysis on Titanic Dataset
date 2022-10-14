@@ -1,0 +1,26 @@
+import pandas as pd
+import seaborn as sns
+
+df=pd.read_csv('train.csv')
+df.head()
+
+1)CATEGORICAL DATA
+  a)Countplot
+     sns.countplot(df['Survived'])
+     df['Survived'].value_counts().plot(kind='bar')
+  b)PieChart
+     df['Survived'].value_counts().plot(kind='pie',autopct='%.2f')
+2)NUMERICAL DATA
+  a)Histogram
+     import matplotlib.pyplot as plt
+     plt.hist(df['Age'],bins=50)
+  b)Distplot
+     sns.distplot(df['Age'])
+  c)Boxplot
+     sns.boxplot(df['Fare'])
+     
+ 3)Minimum and Maximum Value
+    df['Age'].max()
+    df['Age'].min()
+    df['Age'].mean()
+    df['Age'].skew()
