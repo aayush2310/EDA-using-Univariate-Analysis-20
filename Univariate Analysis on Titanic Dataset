@@ -24,3 +24,6 @@ df.head()
     df['Age'].min()
     df['Age'].mean()
     df['Age'].skew()
+
+
+#Exploratory Data Analysis (EDA) – Types and Tools
